@@ -1,0 +1,26 @@
+body{
+  background-image: url('../public/bg-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+h2{
+  color: #6c2543 ;
+}
+
+@media (max-width:950px) {
+  body{
+    background-image: url('../public/mb-pg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92vh;
+  }
+  h2{
+    color: #d609a3 ;
+  }
+  
+  
+}
+.todos-2 ,.BTN_hs-dide{
+  display: none;
+}
