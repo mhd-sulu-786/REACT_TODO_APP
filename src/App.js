@@ -21,12 +21,14 @@ function App() {
     if (finsh.length === 0 || finsh.every((item) => item.status === true)) {
       document.getElementsByClassName('todos-2')[0].style.display = 'block';
       document.getElementsByClassName('BTN_hs-dide')[0].style.display = 'block';
-      
+      document.getElementsByClassName('btn-show-todos')[0].style.display = 'none';  
     }
   };
 
   const history2 = () => {
     document.getElementsByClassName('todos-2')[0].style.display = 'none';
+    document.getElementsByClassName('BTN_hs-dide')[0].style.display = 'none';
+    document.getElementsByClassName('btn-show-todos')[0].style.display = 'block';  
   };
 
   const removeTodo = (id) => {
@@ -82,10 +84,10 @@ function App() {
             </div>
           </div>
         ))}
-        <a href='##' onClick={history} className='right p-2 bottom'> show Finished Todos</a>
+        <a href='##' onClick={history} className='right btn-show-todos p-2 bottom'> Show Finished Todos</a>
       </div>
       <div className="todos-2 todos mt-4">
-        <a href='##' onClick={history2} className='right BTN_hs-dide p-2 bottom'> hide Finished Todos</a>
+        <a href='##' onClick={history2} className='right BTN_hs-dide p-2 bottom'> Hide Finished Todos</a>
         {finsh.map((item) => (
           <div key={item.id} className="todo bg-light rounded d-flex mt-2 justify-content-between align-items-center">
             <div className="left p-2">
