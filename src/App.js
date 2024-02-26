@@ -82,10 +82,10 @@ function App() {
             </div>
           </div>
         ))}
-        <a href='##' onClick={history} className='right p-2 bottom'> show history</a>
+        <a href='##' onClick={history} className='right p-2 bottom'> show Finished Todos</a>
       </div>
       <div className="todos-2 todos mt-4">
-        <a href='##' onClick={history2} className='right BTN_hs-dide p-2 bottom'> hide history</a>
+        <a href='##' onClick={history2} className='right BTN_hs-dide p-2 bottom'> hide Finished Todos</a>
         {finsh.map((item) => (
           <div key={item.id} className="todo bg-light rounded d-flex mt-2 justify-content-between align-items-center">
             <div className="left p-2">
